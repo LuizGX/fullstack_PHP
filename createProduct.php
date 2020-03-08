@@ -38,7 +38,7 @@
                 if(!isset($_GET['id'])){
                     echo '<form method="POST" action="api/product/create.php">';
                 } else {
-                    echo '<form method="POST" action="api/product/update.php?id=' . $id_product . '>';
+                    echo '<form method="POST" action="api/product/update.php?id=' . $id_product . '">';
                 }
             ?>
         <div class="form-group">
