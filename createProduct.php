@@ -1,7 +1,6 @@
 <?php
     include_once 'api/colours/read.php';
     
-echo $_GET['id'];
     if(isset($_GET['id'])){
         include_once 'api/product/read.php';
         
@@ -24,8 +23,6 @@ echo $_GET['id'];
                 $product_item['colours'] = $colours_names;
             }
         }
-
-        var_dump($product_item);
     }
 ?>
 <html>
