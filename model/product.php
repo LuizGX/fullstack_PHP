@@ -25,6 +25,13 @@
             return $result;
         }
 
+        public function read_by_id($id_product) {
+            $sql = "SELECT * FROM products WHERE id_product = '{$id_product}'";
+            $result = $this->conn->query($sql);
+
+            return $result;
+        }
+
         public function read_colours_names($id_product) {
             $sql = "SELECT * FROM products_colours WHERE id_product = '{$id_product}'";
             $result = $this->conn->query($sql);
@@ -43,17 +50,33 @@
             return $colours_names;
         }
 
-        // public function update() {
-        //     $sql = "SELECT * FROM products";
-        //     $result = $this->conn->query($sql);
-        //     $row = mysqli_fetch_assoc($result);
+        public function show_by_id($id_product) {
+            $sql = "SELECT * FROM products WHERE id_product = '{$id_product}'";
+            $result = $this->conn->query($sql);
+            
+            return $result;
+        }
 
-        // }
+        public function update($id_product, $name, $colours) {
+            $sql="UPDATE products SET product_name='$name' WHERE id_product = '{$id_product}'";
+            $result = $this->conn->query($sql);
+            
+            $sql2 = "DELETE FROM products_colours WHERE id_product = '{$id_product}'";
+            $result2 = $this->conn->query($sql2);
+            
+            for($i = 0; $i < count($colours); $i++){
+                $sql3 = "INSERT INTO products_colours (id_product, id_colour) VALUES ('$id_product', $colours[$i])";
+                $result2 = $this->conn->query($sql3);
+            }
 
-        // public function delete() {
-        //     $sql = "SELECT * FROM products";
-        //     $result = $this->conn->query($sql);
-        //     $row = mysqli_fetch_assoc($result);
+            return $result;
+        }
 
-        // }
+        public function delete($id_product) {
+            $sql2 = "DELETE FROM products_colours WHERE id_product = '{$id_product}'";
+            $result2 = $this->conn->query($sql2);
+
+            $sql = "DELETE FROM products WHERE id_product = '{$id_product}'";
+            $result = $this->conn->query($sql);
+        }
     }

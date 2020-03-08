@@ -21,13 +21,13 @@
                 echo '<div class="col-sm">';
                     echo '<div class="card">';
                         echo '<div class="card-body">';
-                            echo '<h5 class="card-title">' . $data['product_name'] . '</h5>';
+                            echo '<h3 class="card-title">' . $data['product_name'] . '</h3>';
                             echo '<h6 class="card-subtitle mb-2 text-muted">Cores: </h6>';
                                 foreach($data['colours'] as $colours){
                                     echo '<p class="card-text">'.$colours.'</p>';
                                 }
-                            echo '<a href="#" class="card-link">Alterar</a>';
-                            echo '<a href="#" class="card-link">Deletar</a>';
+                            echo '<a href="api/product/show_by_id.php?id=' . $data["id_product"] . '" class="card-link">Alterar</a>';
+                            echo '<a href="api/product/delete.php?id=' . $data["id_product"] . '" class="card-link">Deletar</a>';
                         echo '</div>';
                     echo '</div>';
                 echo '</div>';

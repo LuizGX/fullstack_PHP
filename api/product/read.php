@@ -17,6 +17,7 @@
 
         while($row = mysqli_fetch_assoc($result)) {
             $product_item = array(
+                "id_product" => $row['id_product'],
                 "product_name" => $row['product_name']
             );
             $product_item['colours'] = array();
