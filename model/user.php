@@ -10,6 +10,7 @@
             $sql = "SELECT * FROM users WHERE email= '{$email}'";
             $result = $this->conn->query($sql);
             $row = mysqli_fetch_assoc($result);
+            $password = base64_encode($password);
 
             if(!$row){
                 echo '<script language="javascript">';
