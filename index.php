@@ -18,7 +18,7 @@
   <div class="row">
         <?php
             foreach($products_arr['data'] as $data){
-                echo '<div class="col-sm">';
+                echo '<div class="col-4">';
                     echo '<div class="card">';
                         echo '<div class="card-body">';
                             echo '<h3 class="card-title">' . $data['product_name'] . '</h3>';
