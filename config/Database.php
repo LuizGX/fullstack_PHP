@@ -22,5 +22,9 @@
             return $this->conn->query($sql);
         }
 
+        public function insert_id(){
+            return $this->conn->insert_id;
+        }
+
 
     }

@@ -10,16 +10,22 @@
 
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand" href="createProduct.php">Adicionar novo produto</a>
+</nav>
+
 <div class="container">
   <div class="row">
         <?php
             foreach($products_arr['data'] as $data){
-                echo '<div class="col-sm-4">';
+                echo '<div class="col-sm">';
                     echo '<div class="card">';
                         echo '<div class="card-body">';
                             echo '<h5 class="card-title">' . $data['product_name'] . '</h5>';
                             echo '<h6 class="card-subtitle mb-2 text-muted">Cores: </h6>';
-                            echo '<p class="card-text">cores do produto devem entrar aqui</p>';
+                                foreach($data['colours'] as $colours){
+                                    echo '<p class="card-text">'.$colours.'</p>';
+                                }
                             echo '<a href="#" class="card-link">Alterar</a>';
                             echo '<a href="#" class="card-link">Deletar</a>';
                         echo '</div>';
