@@ -27,6 +27,4 @@
             $product_item['colours'] = $colours_names;
             array_push($products_arr['data'], $product_item);
         }
-    } else {
-        $products_arr['data'] = array('message'=> 'Não foram encontrados produtos');
-    }
+    } else {    }
