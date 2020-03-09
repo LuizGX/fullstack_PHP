@@ -39,7 +39,7 @@
 
     </head>
     <body>
-    <div class="container">
+    <div class="container" style="background-color: white; padding: 3vh">
             <?php
                 if(!isset($_GET['id'])){
                     echo '<form method="POST" action="api/product/create.php">';

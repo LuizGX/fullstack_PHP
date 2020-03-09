@@ -26,5 +26,12 @@ E então abra o XAMPP, ligue as opções Apache e MySQL e acesse:
 
 [http://localhost/php_mysql/login.php](http://localhost/php_mysql/login.php)
 
+Você pode criar um novo usuário ou usar um padrão já inserido:
+
+```bash
+usuário: admin@admin.com
+senha: admin
+```
+
 ## Licensa
 [MIT](https://choosealicense.com/licenses/mit/)

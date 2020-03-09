@@ -9,5 +9,9 @@
 }
 
 .card-body{
-    background-color: #C4C4C4;
+    background-color: white;
+}
+
+body {
+  background-color: #4f4caf !important;
 }

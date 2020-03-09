@@ -43,8 +43,8 @@
                                     foreach($data['colours'] as $colours){
                                         echo '<p class="card-text">'.$colours.'</p>';
                                     }
-                                echo '<a href="api/product/show_by_id.php?id=' . $data["id_product"] . '" class="card-link">Alterar</a>';
-                                echo '<a href="api/product/delete.php?id=' . $data["id_product"] . '" class="card-link">Deletar</a>';
+                                echo '<a href="api/product/show_by_id.php?id=' . $data["id_product"] . '" class="btn btn-primary" style="margin-right: 10px;">Alterar</a>';
+                                echo '<a href="api/product/delete.php?id=' . $data["id_product"] . '" class="btn btn-primary">Deletar</a>';
                             echo '</div>';
                         echo '</div>';
                     echo '</div>';
