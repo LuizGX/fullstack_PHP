@@ -72,7 +72,8 @@
             }
             ?>
             </div>
-            <button type="submit" name="create_produto" class="btn btn-primary">Submit</button>
+            <button type="submit" name="create_produto" class="btn btn-block btn-primary">Salvar</button>
+            <a href="javascript:history.go(-1)" class="btn btn-block btn-danger">Voltar</a>
         </form>
     </div>
     </body>
