@@ -1,5 +1,12 @@
 <?php
     include_once 'api/product/read.php';
+    
+    session_start();
+
+    if(!isset($_SESSION['login'])){
+		  header('Location: login.php');
+    }
+
 ?>
 <html>
 
@@ -11,7 +18,16 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-    <a class="navbar-brand" href="createProduct.php">Adicionar novo produto</a>
+<a class="navbar-brand" href="createProduct.php">Adicionar novo produto</a>
+  
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+    <a class="navbar-nav" href="api/user/logout.php" style="color: white;">Logout</a>
+    </form>
+  </div>
 </nav>
 
 <div class="container">

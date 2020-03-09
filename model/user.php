@@ -7,6 +7,9 @@
         }
 
         public function verifyLogin($email, $password){
+            session_start();
+            $_SESSION["login"] = $email;
+
             $sql = "SELECT * FROM users WHERE email= '{$email}'";
             $result = $this->conn->query($sql);
             $row = mysqli_fetch_assoc($result);

@@ -1,5 +1,11 @@
 <?php
     include_once 'api/colours/read.php';
+
+    session_start();
+
+    if(!isset($_SESSION['login'])){
+		  header('Location: login.php');
+    }
     
     if(isset($_GET['id'])){
         include_once 'api/product/read.php';
