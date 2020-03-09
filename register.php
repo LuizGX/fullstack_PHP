@@ -20,8 +20,8 @@
 		<div class="form">
 			<h1>Cadastro</h1>
 			<form method="POST" action="api/user/signup.php"> 
-				<input class="form-control" type="text" name="email" placeholder="E-mail">
-				<input class="form-control" type="password" name="password" placeholder="Senha">
+				<input class="form-control" type="email" name="email" placeholder="E-mail" required>
+				<input class="form-control" type="password" name="password" placeholder="Senha" required>
 				<input type="submit" class="enter" value="Cadastrar">
 			</form>
 		</div>
