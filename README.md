@@ -1,37 +1,40 @@
-# Projeto Fullstack
+# Proposta
+### Você precisa criar uma API, contendo os seguintes end-points/rotinas abaixo:
 
-Este é um projeto Fullstack feito com HTML5, Bootstrap, CSS3, PHP e MySQL.
+- Cadastro de usuários  
+- Autenticação utilizando JWT  
+- Produtos com variação (restrição para somente usuário autenticado)  
+  - Listar  
+  - Cadastrar  
+  - Atualizar  
+  - Deletar  
 
-## Instalação
+Obs: é importante lembrar que em todas essas operações de produtos acima você precisa considerar as variações de cores, mas também deixar flexivel para decidir se eu quero ou não por uma variação.
 
-Primeiramente, faça o download do [XAMPP](https://www.apachefriends.org/pt_br/download.html).
+# BittarApp
 
-Depois disso, coloque a pasta desse projeto dentro de:
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
 
-```bash
-C:\xampp\htdocs
-```
+## Development server
 
-## Banco de dados
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Entre no link:
+## Code scaffolding
 
-[http://localhost/phpmyadmin](http://localhost/phpmyadmin)
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Vá em Importar -> escolher arquivo (selecione o arquivo easyjur.sql) e clique no botão de executar
+## Build
 
-## Finalizando
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-E então abra o XAMPP, ligue as opções Apache e MySQL e acesse:
+## Running unit tests
 
-[http://localhost/php_mysql/login.php](http://localhost/php_mysql/login.php)
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Você pode criar um novo usuário ou usar um padrão já inserido:
+## Running end-to-end tests
 
-```bash
-usuário: admin@admin.com
-senha: admin
-```
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Licensa
-[MIT](https://choosealicense.com/licenses/mit/)
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
