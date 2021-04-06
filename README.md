@@ -11,30 +11,40 @@
 
 Obs: é importante lembrar que em todas essas operações de produtos acima você precisa considerar as variações de cores, mas também deixar flexivel para decidir se eu quero ou não por uma variação.
 
-# BittarApp
+# Projeto Fullstack
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
+Este é um projeto Fullstack feito com HTML5, Bootstrap, CSS3, PHP e MySQL.
 
-## Development server
+## Instalação
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Primeiramente, faça o download do [XAMPP](https://www.apachefriends.org/pt_br/download.html).
 
-## Code scaffolding
+Depois disso, coloque a pasta desse projeto dentro de:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+C:\xampp\htdocs
+```
 
-## Build
+## Banco de dados
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Entre no link:
 
-## Running unit tests
+[http://localhost/phpmyadmin](http://localhost/phpmyadmin)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Vá em Importar -> escolher arquivo (selecione o arquivo easyjur.sql) e clique no botão de executar
 
-## Running end-to-end tests
+## Finalizando
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+E então abra o XAMPP, ligue as opções Apache e MySQL e acesse:
 
-## Further help
+[http://localhost/php_mysql/login.php](http://localhost/php_mysql/login.php)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Você pode criar um novo usuário ou usar um padrão já inserido:
+
+```bash
+usuário: admin@admin.com
+senha: admin
+```
+
+## Licensa
+[MIT](https://choosealicense.com/licenses/mit/)
